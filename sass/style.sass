@@ -90,6 +90,10 @@ body
         left: 0
         z-index: -1
         transition: all .4s
+    &_animated
+        animation: BtnToUp .5s ease-out .7s
+        animation-fill-mode: backwards
+        
 @keyframes LeftToRight
     0%
         opacity: 0
@@ -108,3 +112,10 @@ body
     100%
         opacity: 1
         transform: translateX(0px)
+@keyframes BtnToUp
+    0%
+        opacity: 0
+        transform: translateY(50px)
+    100%
+        opacity: 1
+        transform: translateY(0px)
