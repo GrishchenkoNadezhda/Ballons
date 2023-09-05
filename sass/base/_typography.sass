@@ -4,6 +4,7 @@ body
     color: $color-gray
     font-size: $font-size-paragraph
     letter-spacing: .2rem
+    
 .title-first
     color: $color-white
     &__main
@@ -31,6 +32,8 @@ body
         animation-timing-function: ease
         backface-visibility: hidden
         margin-bottom: 6.5rem
+        &__white
+            background-color: $color-white
 .title-secondary
     
     font-size: $font-size-paragraph-h2
@@ -45,6 +48,8 @@ body
     &:hover
         transform: skewY(2deg) skewX(15deg) scale(1.1)
         text-shadow: $shadov-h2
+    &_white
+            color: $color-white
 .title-third
     font-size: $font-size-paragraph-h3
     letter-spacing: .2rem
