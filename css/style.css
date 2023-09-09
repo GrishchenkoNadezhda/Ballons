@@ -507,6 +507,11 @@
   visibility: none;
   transform: translateY(-3rem);
 }
+@media only screen and (max-width: 900px) {
+  .form__input:placeholder-shown + .form__label {
+    margin-bottom: 3rem;
+  }
+}
 .form__group-radio {
   display: inline-block;
 }
@@ -519,6 +524,14 @@
   }
   .form__group-radio:not(:last-child) {
     margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .form__group-radio {
+    display: block;
+  }
+  .form__group-radio:not(:last-child) {
+    margin-bottom: 5rem;
   }
 }
 .form__input-radio {
